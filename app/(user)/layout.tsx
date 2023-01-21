@@ -10,7 +10,8 @@ export default function RootLayout({
     <html>
       <body className="max-w-7xl mx-auto">
         <Header />
-        <Banner />
+        {/* Cambiar por Slideshow */}
+        {/* <Banner /> */}
 
         {children}
       </body>

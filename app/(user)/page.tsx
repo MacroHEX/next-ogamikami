@@ -10,7 +10,7 @@ const query = groq`
     ...,
     author->,
     categories[]->
-  } | order(_publishedAt desc)
+  } | order(publishedAt desc)
 `;
 
 type Props = {};
@@ -33,9 +33,7 @@ const Page = async ({}: Props) => {
   }
 
   const posts = await client.fetch(query);
-  return (
-      <BlogList posts={posts}/>
-  );
+  return <BlogList posts={posts} />;
 };
 
 export default Page;
