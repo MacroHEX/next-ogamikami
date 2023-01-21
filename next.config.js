@@ -5,7 +5,10 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    remotePatterns: [{ hostname: "pbs.twimg.com" }],
+    remotePatterns: [
+      { hostname: "pbs.twimg.com" },
+      { hostname: "cdn.sanity.io" },
+    ],
   },
 };
 
