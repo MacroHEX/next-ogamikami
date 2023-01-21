@@ -2,7 +2,7 @@ import NextLink from "next/link";
 
 import { ArrowUturnLeftIcon } from "@heroicons/react/24/solid";
 
-export const StudioNavbar = (props: any) => {
+const StudioNavbar = (props: any) => {
   return (
     <div>
       <div className="flex items-center justify-between p-5">
@@ -21,3 +21,5 @@ export const StudioNavbar = (props: any) => {
     </div>
   );
 };
+
+export default StudioNavbar;
