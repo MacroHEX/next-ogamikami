@@ -16,9 +16,9 @@ const query = groq`
   } | order(publishedAt desc)
 `;
 
-type Props = {};
+export const revalidate = 60;
 
-const Page = async ({}: Props) => {
+const Page = async () => {
   if (previewData()) {
     return (
       <PreviewSuspense
