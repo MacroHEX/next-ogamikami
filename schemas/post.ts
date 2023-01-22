@@ -9,6 +9,7 @@ export default defineType({
       name: "title",
       title: "Titulo",
       type: "string",
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: "slug",
@@ -73,6 +74,11 @@ export default defineType({
       name: "body",
       title: "Cuerpo",
       type: "blockContent",
+    }),
+    defineField({
+      name: "isHighlighted",
+      title: "Destacado",
+      type: "boolean",
     }),
   ],
 
